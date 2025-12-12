@@ -1,267 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthick K - Vue.js Developer</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="/assets/css/styles.css" rel='stylesheet'></link>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Karthick.K</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <i class='bx bx-menu menu-toggle' id="menuToggle"></i>
+        </div>
+    </nav>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <style>
-            .contact__container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                padding: 20px;
-                background-color: #f9f9f9;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-            .section-title {
-                text-align: center;
-                font-size: 2rem;
-                margin-bottom: 20px;
-                color: #333;
-            }
-            .contact__details {
-                text-align: left;
-                font-size: 1.2rem;
-                line-height: 1.6;
-                color: #555;
-            }
-            .contact__item {
-                margin-bottom: 10px;
-            }
-            .contact__item strong {
-                color: #333;
-            }
-            .work__container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-    }
-    .work__item {
-        text-align: center;
-    }
-    .work__img img {
-        width: 100%;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-    }
-    .work__img img:hover {
-        transform: scale(1.05);
-    }
-    .work__name {
-        margin-top: 10px;
-        font-size: 1rem;
-        color: #333;
-        font-weight: bold;
-    }
-    .section-title {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 30px;
-        color: #333;
-    }
-        </style>    
-        <title>Karthick K</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Karthick K</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid " id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Karthick</span><br>vue.Js Developer <br>Web Designer</h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/karthick-k-63361b147/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/karthick1607" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img ml-10">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha"> 
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/about.png">
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpeg" alt="">
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <br><span class="highlight">Karthick K</span></h1>
+                    <div class="typing-container">
+                        <span class="typing-text" id="typingText"></span>
                     </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Karthick K</h2>
-                        <p class="about__text">Hello, I'm Karthick K, a Vue.js developer with a year of experience working at Chadura. Over the past year, I've honed my skills in building dynamic, responsive web applications using Vue.js, focusing on creating efficient, scalable solutions. My experience includes working with component-based architecture, managing state with Vuex, and integrating various third-party libraries to enhance application functionality. I'm passionate about leveraging Vue.js to deliver high-quality user experiences and am continuously exploring new techniques and tools to stay at the forefront of web development.</p>           
-                    </div>                                   
+                    <p class="hero-description">
+                        Passionate Vue.js developer with 2 years of experience building modern, 
+                        responsive web applications. Specialized in creating seamless user experiences 
+                        with clean, maintainable code.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class='bx bx-envelope'></i> Hire Me
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class='bx bx-briefcase-alt'></i> View Work
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/karthick-k-63361b147/" target="_blank" class="social-link">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com/karthick1607" target="_blank" class="social-link">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="mailto:karthickkannan1607@gmail.com" class="social-link">
+                            <i class='bx bx-envelope'></i>
+                        </a>
+                    </div>
                 </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">vue.Js</span>
+                <div class="hero-card">
+                    <div class="card-face">
+                        <div class="profile-container">
+                            <div class="profile-image">
+                                <img src="/assets/img/about.jpeg" alt="">
                             </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
+                            <div class="card-info">
+                                <h3>Vue.js/Web Developer</h3>
+                                <p>Frontend Specialist</p>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">Tailwind</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UI/UX</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">I am proficient in developing dynamic and responsive web applications using<b> Vue.js</b>, with extensive experience in component-based architecture and state management through Vuex. My skills include building reusable components, integrating third-party libraries, and optimizing applications for performance and scalability. I have a strong understanding of Vue.js directives, lifecycle hooks, and two-way data binding, and I am adept at implementing routing with Vue Router. Additionally, I am well-versed in testing Vue.js components using tools like Jest and Cypress, and have experience integrating Vue.js with backend technologies such as RESTful APIs and GraphQL, using modern development tools like Webpack, Babel, and ESLint to enhance workflow and maintainability.</p>
-                    </div>
-                      
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+
                     </div>
                 </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-            
-                <div class="work__container bd-grid">
-                    <div class="work__item">
-                        <a href="" class="work__img">
-                            <img src="assets/img/work1.jpg" alt="">
-                        </a>
-                        <p class="work__name">Invoice Management</p>
-                    </div>
-                    <div class="work__item">
-                        <a href="" class="work__img">
-                            <img src="assets/img/work2.jpg" alt="">
-                        </a>
-                        <p class="work__name">Acharya Tulsi</p>
-                    </div>
-                    <div class="work__item">
-                        <a href="" class="work__img">
-                            <img src="assets/img/work3.jpg" alt="">
-                        </a>
-                        <p class="work__name">Josh UI</p>
-                    </div>
-                    <div class="work__item">
-                        <a href="" class="work__img">
-                            <img src="assets/img/work4.jpg" alt="">
-                        </a>
-                        <p class="work__name">Soundharya HRMS</p>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-            
-                <div class="contact__container bd-grid">
-                    <div class="contact__details">
-                        <p class="contact__item"><strong>Phone:</strong> +91-9994433332</p>
-                        <p class="contact__item"><strong>Email:</strong> developerkarthickk@gmail.com</p>
-                        <p class="contact__item"><strong>Address:</strong> 34,4th cross,<br/>Parvathipuram, <br>Musiri - Tirchy (District)<br/> Tamilnadu</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer" id="contact">
-            <p class="footer__title">Karthick K</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Karthick K. All rigths reserved</p>
-        </footer>
+        </div>
+    </section>
 
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class='bx bx-calendar stat-icon'></i>
+                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-card">
+                    <i class='bx bx-briefcase stat-icon'></i>
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-card">
+                    <i class='bx bx-code-block stat-icon'></i>
+                    <span class="stat-number" data-target="6">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-card">
+                    <i class='bx bx-happy-alt stat-icon'></i>
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">% Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my journey and expertise</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <i class='bx bx-laptop'></i>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="number">2+</span>
+                        <span class="text">Years Exp</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Front-End Developer Specializing in Vue.js</h3>
+                    <p>
+                        Hello! I'm Karthick K, a dedicated front-end developer with 2 years of hands-on 
+                        experience at Chadura Tech Private Limited in Bengaluru. My passion lies in creating 
+                        dynamic, responsive, and user-centric web applications.
+                    </p>
+                    <p>
+                        I specialize in the Vue.js ecosystem, including Vue 3, Vuex/Pinia for state management, 
+                        and Vue Router. My expertise extends to modern CSS frameworks like Tailwind CSS, 
+                        API integration with Axios, and translating Figma designs into pixel-perfect interfaces.
+                    </p>
+                    <p>
+                        I thrive in collaborative environments and am constantly learning new technologies 
+                        to stay at the forefront of web development.
+                    </p>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Front-End Developer</h4>
+                            <span class="period">May 2024 - Present</span>
+                            <p>Chadura Tech Private Limited, Bengaluru</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Junior Front-End Developer</h4>
+                            <span class="period">July 2023 - May 2024</span>
+                            <p>Chadura Tech Private Limited, Bengaluru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bxl-vuejs skill-icon'></i>
+                    <h3>Vue.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-javascript skill-icon'></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-html5 skill-icon'></i>
+                    <h3>HTML5 & CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-tailwind-css skill-icon'></i>
+                    <h3>Tailwind CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-git skill-icon'></i>
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-server skill-icon'></i>
+                    <h3>REST APIs</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>
+                            A full-featured e-commerce application with product catalog, shopping cart, 
+                            and checkout functionality built with Vue 3 and Pinia.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">Js</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class='bx bx-task'></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>
+                            A collaborative task management application with real-time updates, 
+                            drag-and-drop functionality, and team collaboration features.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Vuex</span>
+                            <span class="tech-tag">Tailwindcss</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class='bx bx-line-chart'></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>
+                            Interactive analytics dashboard with real-time data visualization, 
+                            custom charts, and comprehensive reporting features.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vue 3</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:karthickkannan1607@gmail.com">karthickkannan1607@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bxl-linkedin'></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/karthick-k-63361b147/" target="_blank">Connect with me</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/karthick1607" target="_blank">View my repositories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Karthick K Vue.js/Web Developer</p>
+        </div>
+    </footer>
+
+    <div class="scroll-top" id="scrollTop">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+
+  <script src="/assets/js/main.js"></script>
+</body>
 </html>
